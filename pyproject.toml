@@ -1,0 +1,48 @@
+[build-system]
+requires = ["hatchling>=1.24"]
+build-backend = "hatchling.build"
+
+[project]
+name = "quant-lab"
+version = "0.1.0"
+description = "Quantization lab: FP32 vs FP16 vs INT8 dynamic/static vs W8A16 for vision models on CPU, CoreML and Qualcomm QNN - accuracy, latency, size, EP coverage, notebook and HTML report."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Jesús Aragón" }]
+requires-python = ">=3.11"
+keywords = ["quantization", "onnx", "onnxruntime", "int8", "fp16", "coreml", "qualcomm", "edge-ai"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = ["numpy>=1.24", "pillow>=10"]
+
+[project.optional-dependencies]
+cpu = ["onnxruntime>=1.18"]
+qnn = ["onnxruntime-qnn>=1.18"]
+train = ["torch>=2.2", "torchvision>=0.17", "onnx>=1.15", "onnxscript>=0.1", "onnxconverter-common>=1.14", "sympy>=1.12"]
+report = ["matplotlib>=3.8"]
+notebook = ["matplotlib>=3.8", "jupyter>=1.0", "nbconvert>=7"]
+dev = ["onnxruntime>=1.18", "onnx>=1.15", "onnxconverter-common>=1.14", "sympy>=1.12", "matplotlib>=3.8", "pytest>=8", "ruff>=0.5"]
+
+[project.scripts]
+qlab = "quant_lab.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/RobiiAragon/quant-lab"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/quant_lab"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = ["notebooks"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

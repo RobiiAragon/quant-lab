@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+dist/
+build/
+models/*.onnx
+*.data
+sym_shape_infer_temp.onnx
+/results/local*.json
