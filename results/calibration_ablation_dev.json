@@ -1,0 +1,96 @@
+{
+  "dev_images": 300,
+  "calibration_images": 128,
+  "results": {
+    "resnet18": {
+      "fp32": {
+        "top1": 0.6966666666666667,
+        "agreement": 1.0
+      },
+      "static minmax per-channel": {
+        "top1": 0.6933333333333334,
+        "agreement": 0.97
+      },
+      "static percentile per-channel": {
+        "top1": 0.7,
+        "agreement": 0.9633333333333334
+      },
+      "static entropy per-channel": {
+        "top1": 0.6933333333333334,
+        "agreement": 0.97
+      },
+      "static minmax per-tensor": {
+        "top1": 0.7,
+        "agreement": 0.9466666666666667
+      },
+      "dynamic per-tensor": {
+        "top1": 0.6933333333333334,
+        "agreement": 0.9466666666666667
+      },
+      "dynamic per-channel": {
+        "top1": 0.6966666666666667,
+        "agreement": 0.95
+      }
+    },
+    "mobilenetv3-large": {
+      "fp32": {
+        "top1": 0.77,
+        "agreement": 1.0
+      },
+      "static minmax per-channel": {
+        "top1": 0.72,
+        "agreement": 0.8666666666666667
+      },
+      "static percentile per-channel": {
+        "top1": 0.75,
+        "agreement": 0.9066666666666666
+      },
+      "static entropy per-channel": {
+        "top1": 0.72,
+        "agreement": 0.8666666666666667
+      },
+      "static minmax per-tensor": {
+        "top1": 0.74,
+        "agreement": 0.84
+      },
+      "dynamic per-tensor": {
+        "top1": 0.76,
+        "agreement": 0.8866666666666667
+      },
+      "dynamic per-channel": {
+        "top1": 0.75,
+        "agreement": 0.88
+      }
+    },
+    "efficientnet-b0": {
+      "fp32": {
+        "top1": 0.7966666666666666,
+        "agreement": 1.0
+      },
+      "static minmax per-channel": {
+        "top1": 0.33666666666666667,
+        "agreement": 0.39
+      },
+      "static percentile per-channel": {
+        "top1": 0.65,
+        "agreement": 0.7666666666666667
+      },
+      "static entropy per-channel": {
+        "top1": 0.33666666666666667,
+        "agreement": 0.39
+      },
+      "static minmax per-tensor": {
+        "top1": 0.006666666666666667,
+        "agreement": 0.006666666666666667
+      },
+      "dynamic per-tensor": {
+        "top1": 0.0,
+        "agreement": 0.0
+      },
+      "dynamic per-channel": {
+        "top1": 0.0,
+        "agreement": 0.0
+      }
+    }
+  }
+}
