@@ -1,0 +1,30 @@
+{
+  "calibration_images": 128,
+  "calibration_split": "train",
+  "int8_static_calibration": "percentile",
+  "w8a16_calibration": "minmax",
+  "int8_dynamic": "per-channel",
+  "seconds": {
+    "resnet18": {
+      "fp32": 0.964999291987624,
+      "fp16": 0.10315191699191928,
+      "int8-dynamic": 0.09212037501856685,
+      "int8-static": 4.213657292013522,
+      "w8a16-static": 0.9192531669978052
+    },
+    "mobilenetv3-large": {
+      "fp32": 0.30925433296943083,
+      "fp16": 0.046883083996362984,
+      "int8-dynamic": 0.11648774996865541,
+      "int8-static": 6.948996332997922,
+      "w8a16-static": 0.9982644580304623
+    },
+    "efficientnet-b0": {
+      "fp32": 0.42632537498138845,
+      "fp16": 0.04482924996409565,
+      "int8-dynamic": 0.08560770802432671,
+      "int8-static": 12.598719166999217,
+      "w8a16-static": 1.7967621250427328
+    }
+  }
+}

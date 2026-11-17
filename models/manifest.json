@@ -1,0 +1,62 @@
+{
+  "efficientnet-b0.fp16.onnx": {
+    "sha256": "6a16a1b0e3ce68db4c777a0f1610885e45a7dce192b178b84955edafbb7c6f6b",
+    "bytes": 10634131
+  },
+  "efficientnet-b0.fp32.onnx": {
+    "sha256": "0f8f44ad6a6f5c1497a06afa4506ab9b5138e89509c15d8c3a9b4e2de13fac34",
+    "bytes": 21144204
+  },
+  "efficientnet-b0.int8-dynamic.onnx": {
+    "sha256": "2f5827db9da6ea294fabb05242206391f930ce59760f91bad4fcb9ae267ba5cc",
+    "bytes": 5646928
+  },
+  "efficientnet-b0.int8-static.onnx": {
+    "sha256": "4c80390d9ce8ce977e26627870afcefeb073d73f37522919772f847f5fa9f9b3",
+    "bytes": 6183147
+  },
+  "efficientnet-b0.w8a16-static.onnx": {
+    "sha256": "2e6b9688828610d9927f2fa0907afdde7e46bd2dfab715c5b4b50e239d315c98",
+    "bytes": 6193015
+  },
+  "mobilenetv3-large.fp16.onnx": {
+    "sha256": "19492722289f40d4c2100a923ea10932c52458d0b86fa1a147b6c082704ac8b0",
+    "bytes": 10993453
+  },
+  "mobilenetv3-large.fp32.onnx": {
+    "sha256": "26fc394c4b81570ce7240c63bc02b61abde7e1419776584b39937e539e161d4a",
+    "bytes": 21922145
+  },
+  "mobilenetv3-large.int8-dynamic.onnx": {
+    "sha256": "98ff1dc4476da25d028893bd6886a982a599d9795d917d6d79965a8d3642d83d",
+    "bytes": 5715656
+  },
+  "mobilenetv3-large.int8-static.onnx": {
+    "sha256": "da8b21e99c994c543a4c255f7f12e33613f17787185c7496bbc508660fe1c797",
+    "bytes": 6003979
+  },
+  "mobilenetv3-large.w8a16-static.onnx": {
+    "sha256": "0b60543990e7d60d16732197c2aeb94a5dd5c65018546266465d57af37dd7b74",
+    "bytes": 6010297
+  },
+  "resnet18.fp16.onnx": {
+    "sha256": "0f293a2c7e5f06563feefda325f5cb2c2f85d6e5c597433fa8ee849c9f8b3562",
+    "bytes": 23382708
+  },
+  "resnet18.fp32.onnx": {
+    "sha256": "caeb1bcf6f593d9f7535d16cba2bb4da939d95e41370c3ce911195ca502a16a6",
+    "bytes": 46748561
+  },
+  "resnet18.int8-dynamic.onnx": {
+    "sha256": "49f1c4e6be4ccb576b604fedfbdb504ff10490ec458c8e3497d1c00aa7a1bc18",
+    "bytes": 11750032
+  },
+  "resnet18.int8-static.onnx": {
+    "sha256": "e7acbef70035010e8fe2b5b59c57a84384fa35596b814476fa4b94d4a2ebb67f",
+    "bytes": 11822896
+  },
+  "resnet18.w8a16-static.onnx": {
+    "sha256": "f0d8a34298724126881067e932a4920d28b86d9c4c431ac26a5f420e073b0a8d",
+    "bytes": 11824535
+  }
+}
